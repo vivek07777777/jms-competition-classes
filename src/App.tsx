@@ -3,15 +3,10 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Header, Footer } from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
-import Academics from './pages/Academics';
+import Courses from './pages/courses';
 import Admission from './pages/Admission';
-import Facilities from './pages/Facilities';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-import Achievements from './pages/Achievements';
-import Leadership from './pages/Leadership';
-import Testimonials from './pages/Testimonials';
-import Events from './pages/Events';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -42,13 +37,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/academics" element={<Academics />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/admissions" element={<Admission />} />
-          <Route path="/facilities" element={<Facilities />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/leadership" element={<Leadership />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           {/* Defaulting missing routes to Home */}

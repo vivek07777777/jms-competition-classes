@@ -14,7 +14,9 @@
     @apply font-sans antialiased bg-white text-slate-900;
   }
 }
-
+body{
+  scroll-behavior: smooth;
+}
 @layer utilities {
   .glass {
     @apply bg-white/70 backdrop-blur-md border border-white/20;
